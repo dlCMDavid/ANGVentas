@@ -1,0 +1,7 @@
+// Todos los comandos se añaden estando dentro del directorio de angular en el git bash o nodejs console
+
+// Crear un nuevo componente
+ng generate component Home <- Home es el nombre del componente
+
+// Para crear un nuevo servicio
+ng generate service services/apicliente <- Crear la carpeta si no exite y el servicio se llamará apicliente
