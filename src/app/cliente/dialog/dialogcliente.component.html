@@ -1,0 +1,18 @@
+<!-- Titulo del dialogo -->
+<h1 mat-dialog-title> {{ cliente!=null ? "Editar Usuario": "Nuevo Usuario"}} </h1>
+
+<!-- Contenido -->
+<div mat-dialog-content>
+    <mat-form-field>
+        <mat-label> Nombre </mat-label>
+        <!-- El imput tiene vinculada la variable nombre con la variable del controlador-->
+        <input matInput [(ngModel)]="nombre"> 
+    </mat-form-field>
+</div>
+
+<!-- Acciones -->
+<div mat-dialog-actions>
+    <button mat-raised-button (click)="close()"> Cancelar </button>
+    <button mat-raised-button color="primary" 
+    (click)="cliente!=null ? editCliente() : addCliente()"> Guardar </button>
+</div>
